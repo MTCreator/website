@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>MTCreator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="js/main.js"></script>
+</head>
+<body id="body" class="w3-theme">
+
+    <!-- Sidebar -->
+    <div class="w3-theme-l1 w3-sidebar w3-bar-block w3-border-right w3-animate-left" style="display:none" id="sidebar">
+        <button onclick="closeSidebar()" class="w3-bar-item w3-large">Close &times;</button>
+        <a href="" class="w3-bar-item w3-button">Home</a>
+        <a href="https://github.com/MTCreator" class="w3-bar-item w3-button"><i class="fas fa-code"></i> GitHub</a>
+        <!-- link template
+        <a href="#" class="w3-bar-item w3-button">Disabled link</a>
+        -->
+        <button onclick="applyBetterFont()" class="w3-bar-item w3-button w3-large">Improve website!</button>
+    </div>
+
+    <!--Header-->
+    <div class="w3-theme-d4 w3-bar">
+        <button class="w3-button w3-xlarge w3-bar-item" onclick="openSidebar()">☰</button>
+        <span class="w3-xlarge w3-bar-item">MTCreator_Home</span>
+    </div>
+
+    <!--Content-->
+    <div class="w3-container">
+        <div class="w3-container">
+            <div>
+                <span class="w3-large">Welcome to mtcreator.ddns.net!</span>
+                <br/>
+                This site mainly acts as a portal page for my projects.
+            </div>
+        </div>
+
+        <!--Projects-->
+        <div class="w3-container">
+            <div class="w3-half">
+                <div class="w3-theme-l1 w3-card w3-margin">
+                    <div class="w3-xlarge w3-padding">
+                        UHBeamerTheme
+                    </div>
+                    <div class="w3-theme-l5 w3-padding">
+                        The Hasselt University house style provides a PowerPoint template, but no alternative for the LaTeX document class Beamer. This project aims to provide this alternative.
+                        <br/><br/>
+                        Example:
+                        <div class="w3-container">
+                            Code:
+                            <div class="w3-theme-d3 w3-container">
+                                \begin{frame}{boxes}<br/>
+                                \protect\hypertarget{boxes}{}<br/>
+                                \greybox{123}<br/>
+                                \greenbox{456}{789}<br/>
+                                \bluebox{101}{112}<br/>
+                                \end{frame}<br/>
+                            </div>
+                            Output:
+                            <div class="w3-container">
+                                Dark theme:
+                                <img class="w3-image" src="img/UHBeamerDark.png">
+                                <br/>
+                                Light theme:
+                                <img class="w3-image" src="img/UHBeamerLight.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-theme-l1 w3-padding">
+                        link: <a href="https://github.com/MTCreator/UHBeamerTheme">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project template
+            <div class="w3-half">
+                <div class="w3-theme-l1 w3-card w3-margin">
+                    <div class="w3-xlarge w3-padding">
+                        Title
+                    </div>
+                    <div class="w3-theme-l5 w3-padding">
+                        Description
+                    </div>
+                    <div class="w3-theme-l1 w3-padding">
+                        Footer: <a href="">link</a>
+                    </div>
+                </div>
+            </div>
+            -->
+        </div>
+
+    </div>
+</body>
+</html>
